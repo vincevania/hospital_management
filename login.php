@@ -5,13 +5,25 @@ if(isset($_POST['submit'])){
             die("Connection failed: ". $conn->connect_error);
     }
     else{
-        $query = ("SELECT * FROM admin WHERE email = '{$_POST['email']}' AND password = '{$_POST['password']}'");
+        $query = ("SELECT * FROM user WHERE email = '{$_POST['email']}' AND password = '{$_POST['password']}'");
 
         $result = $conn->query($query);
-        if($result->num_rows > 0){
+        if($result->num_rows > 0)
+        {
+            if($row=mysqli_fetch_assoc($result))
+            {
+                if($row["role"] == 1)
+                {
+                    echo "<script>alert('admin');</script>";
+                    header("Location: admin.html");
+                }
+                else if($row["role"] == 0)
+                {
+                    echo "<script>alert('user');</script>";
+                    header("Location: verified.html");
+                }
+            }
             echo "login success";
-            header("Location: admin/html/admin.html");
-            exit();
         }else{
             echo "user not found";
         }

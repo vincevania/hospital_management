@@ -7,7 +7,7 @@
         // echo $_POST['confirmpassword']."<br>";
         
         $conn = new mysqli("localhost", "root", "", "hospital");
-        $query = "INSERT INTO users(name, email, password) VALUES('{$_POST['name']}', '{$_POST['email']}', '{$_POST['password']}')";
+        $query = "INSERT INTO user(name, email, password) VALUES('{$_POST['name']}', '{$_POST['email']}', '{$_POST['password']}')";
         $result = $conn->query($query);
         if($result){
             echo "registration successful";

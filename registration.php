@@ -35,7 +35,7 @@
     <div class="container">
     <?php
              $conn = new mysqli("localhost", "root", "", "hospital");
-             $query = "SELECT * FROM users";
+             $query = "SELECT * FROM user";
              $result = $conn->query($query);               
     ?>
         <div class="content">
