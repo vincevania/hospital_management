@@ -48,23 +48,29 @@
                     </div>
                     <table>
                         <thead>
-                            <!-- <th>SN</th> -->
+                             <th>SN</th> 
                             <th>Name</th>
-                            <!-- <th>Registration Number</th> -->
+                            <th>Registration Number</th> 
                             <th>Email</th>
-                            <!-- <th>Mobile</th>
+                            <th>Mobile</th>
                             <th>Time</th>
                             <th>Medical Issue</th>
                             <th>Doctor Name</th>
-                            <th>Actions</th> -->
+                            <th>Actions</th> 
                         </thead>
                         <tbody>
-                            <?php
+<?php
     if($result->num_rows > 0){
         while($row = $result->fetch_assoc()){
             echo "<tr>";
             echo "<td>".$row['name']."</td>";
+            echo "<td>".$row['regno']."</td>";
             echo "<td>".$row['email']."</td>";
+            echo "<td>".$row['mobile']."</td>";
+            echo "<td>".$row['time']."</td>";
+            echo "<td>".$row['issue']."</td>";
+            echo "<td>".$row['doc_name']."</td>";
+            echo "<td>".$row['action']."</td>";
             echo "</tr>";
         }
     }

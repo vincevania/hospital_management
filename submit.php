@@ -1,44 +1,31 @@
 <?php
-
     if(isset($_POST['submit'])){
-        // echo $_POST['name']."<br>";
-        // echo $_POST['email']."<br>";
-        // echo $_POST['password']."<br>";
-        // echo $_POST['confirmpassword']."<br>";
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
         
+        // Create a database connection
         $conn = new mysqli("localhost", "root", "", "hospital");
-        $query = "INSERT INTO user(name, email, password) VALUES('{$_POST['name']}', '{$_POST['email']}', '{$_POST['password']}')";
-        $result = $conn->query($query);
-        if($result){
-            echo "registration successful";
-        }else{
-            echo "registration failed";
+
+        // Check if the connection is successful
+        if($conn->connect_error){
+            die("Connection failed: ". $conn->connect_error);
         }
 
-        //     $result = $conn->query($query);
-        // if($conn->connect_error){
-        //     die("Connection failed: ". $conn->connect_error);
-        // }else{
-        //     $query = "SELECT * FROM users";
-        //     $result = $conn->query($query);
-        //     // print_r($result);
-        //     // echo "<pre>";
-        //     if($result->num_rows > 0){
-        //         while($row = $result->fetch_assoc()){
+        // SQL query to insert data into the 'user' table
+        $query = "INSERT INTO user (name, email, password) VALUES ('$name', '$email', '$password')";
 
-        //             if($_POST['email'] == $row['email'] && $_POST['password'] == $row['password']){
-        //                 echo "login success";
-        //             }else{
-        //                 echo "login failed";
-        //             }
-        //         }
-        //         // echo "</pre>";
-        //     }else{
-        
-        //     }
-        // }
+        // Execute the query
+        if($conn->query($query) === TRUE){
+            echo "Registration successful";
+            header("Location: sucess.html");
+        } else {
+            echo "Error: " . $query . "<br>" . $conn->error;
+        }
 
-    }else{
-        echo "not hello";
+        // Close the database connection
+        $conn->close();
+    } else {
+        echo "Form not submitted";
     }
 ?>
