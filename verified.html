@@ -40,11 +40,11 @@
             <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">History</a>
           </li>
+          <li class="nav-item">
+            <button class="button-9 mx-3" onclick="redirectToIndex()" role="button">Log Out</button>
+        </li>
           <li class="nav-item">
             <button class="button-9" onclick="redirectToAppointment()" role="button">Book Now</button>
         </li>
@@ -125,142 +125,143 @@
 
     </div>
  </div>
-
+ 
  <div class="container ">
-    <div class="row ps-5">
-        <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <img src="../project/images/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+  <div class="row ps-5">
+      <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+              <img src="../project/images/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Efficiently manage patient records, appointments, and medical inventory with SMIT Health Centre Management System</p>
               </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <img src="../project/images/successful-medical-team.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+            </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+              <img src="../project/images/successful-medical-team.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Enhance patient care and streamline administrative tasks with SMIT Health Centre Management System</p>
               </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <img src="../project/images/doctor-nurses-special-equipment.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+            </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card" style="width: 18rem;">
+              <img src="../project/images/doctor-nurses-special-equipment.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Efficiently manage patient records, appointments, and medical inventory with SMIT Health Centre Management System</p>
               </div>
+            </div>
+      </div>
+  </div>
+</div>
+<div class="container-fluid mt-5 py-4">
+ <h1 class="text-center"  style="color: #DC5722;">Meet Our Professionals</h1>
+ <ul class="cards">
+  <li>
+    <a href="" class="card">
+      <img src="../project/images/doctor-nurses-special-equipment.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+          <img class="card__thumb" src="../project/images/doc1.jpg" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Jessica Parker</h3>
+            <span class="card__status">1 hour ago</span>
+          </div>
         </div>
-    </div>
+        <p class="card__description">Dr. Jessica Parker offers compassionate care and specializes in specify specialty"</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src="../project/images/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+          <img class="card__thumb" src="../project/images/doc2.jpg" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">kim Cattrall</h3>
+            <span class="card__status">20 min ago</span>
+          </div>
+        </div>
+        <p class="card__description">Dr. Kim Cattrall provides expert healthcare in specify specialty dedicated to improving patient outcomes</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src="../project/images/successful-medical-team.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+          <img class="card__thumb" src="../project/images/doc3.jpg" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Emily Johnson</h3>
+            <span class="card__status">1 hour ago</span>
+          </div>
+        </div>
+        <p class="card__description">Emily Johnson is a dedicated healthcare professional known for her compassionate patient care and expertise in nursing</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="" class="card">
+      <img src="../project/images/doctor-nurses-special-equipment.jpg" class="card__image" alt="" />
+      <div class="card__overlay">
+        <div class="card__header">
+          <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+          <img class="card__thumb" src="../project/images/dpc4.jpg" alt="" />
+          <div class="card__header-text">
+            <h3 class="card__title">Dr. Michael Anderson</h3>
+            <span class="card__status">3 hours ago</span>
+          </div>
+        </div>
+        <p class="card__description">Dr. Michael Anderson is a renowned physician specializing in internal medicine, committed to delivering comprehensive and personalized healthcare services to his patients</p>
+      </div>
+    </a>
+  </li>
+</ul>
  </div>
- <div class="container-fluid mt-5 py-4">
-   <h1 class="text-center"  style="color: #DC5722;">Meet Our Professionals</h1>
-   <ul class="cards">
-    <li>
-      <a href="" class="card">
-        <img src="../project/images/doctor-nurses-special-equipment.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-            <img class="card__thumb" src="../project/images/doc1.jpg" alt="" />
-            <div class="card__header-text">
-              <h3 class="card__title">Jessica Parker</h3>
-              <span class="card__status">1 hour ago</span>
-            </div>
-          </div>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="" class="card">
-        <img src="../project/images/doctor-nurses-special-equipment.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-            <img class="card__thumb" src="../project/images/doc2.jpg" alt="" />
-            <div class="card__header-text">
-              <h3 class="card__title">kim Cattrall</h3>
-              <span class="card__status">3 hours ago</span>
-            </div>
-          </div>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="" class="card">
-        <img src="../project/images/successful-medical-team.jpg" class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-            <img class="card__thumb" src="../project/images/doc3.jpg" alt="" />
-            <div class="card__header-text">
-              <h3 class="card__title">Jessica Parker</h3>
-              <span class="card__status">1 hour ago</span>
-            </div>
-          </div>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="" class="card">
-        <img src="../project/images/doctor-nurses-special-equipment.jpg"class="card__image" alt="" />
-        <div class="card__overlay">
-          <div class="card__header">
-            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-            <img class="card__thumb" src="../project/images/dpc4.jpg" alt="" />
-            <div class="card__header-text">
-              <h3 class="card__title">kim Cattrall</h3>
-              <span class="card__status">3 hours ago</span>
-            </div>
-          </div>
-          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-        </div>
-      </a>
-    </li>
-  </ul>
-   </div>
- </div>
+</div>
 
 <div class="container" id="services">
-    <h1  style="color: #DC5722;" class="text-center">
-       Our Services
-    </h1>
-    <div class="row ">
-        <div class="col-md-4">
-            <div class="card-3">
-                <img class="img-fluid" src="../project/images/doctor-nurses-special-equipment.jpg" alt="">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card-3">
-                <img class="img-fluid" src="../project/images/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini.jpg" alt="">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card-3">
-                <img class="img-fluid" src="../project/images/doctor-nurses-special-equipment.jpg" alt="">
-            </div>
-        </div><div class="col-md-4">
-            <div class="card-3">
-                <img class="img-fluid" src="../project/images/doctor-nurses-special-equipment.jpg" alt="">
-            </div>
-        </div><div class="col-md-4">
-            <div class="card-3">
-                <img class="img-fluid" src="../project/images/successful-medical-team.jpg" alt="">
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card-3">
-                <img class="img-fluid" src="../project/images/doctor-nurses-special-equipment.jpg" alt="">
-            </div>
-        </div>
+  <h1  style="color: #DC5722;" class="text-center">
+     Our Services
+  </h1>
+  <div class="row ">
+      <div class="col-md-4">
+          <div class="card-3">
+              <img class="img-fluid" src="../project/images/doctor-nurses-special-equipment.jpg" alt="">
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card-3">
+              <img class="img-fluid" src="../project/images/portrait-smiling-young-woman-doctor-healthcare-medical-worker-pointing-fingers-left-showing-clini.jpg" alt="">
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card-3">
+              <img class="img-fluid" src="../project/images/doctor-nurses-special-equipment.jpg" alt="">
+          </div>
+      </div><div class="col-md-4">
+          <div class="card-3">
+              <img class="img-fluid" src="../project/images/doctor-nurses-special-equipment.jpg" alt="">
+          </div>
+      </div><div class="col-md-4">
+          <div class="card-3">
+              <img class="img-fluid" src="../project/images/successful-medical-team.jpg" alt="">
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="card-3">
+              <img class="img-fluid" src="../project/images/doctor-nurses-special-equipment.jpg" alt="">
+          </div>
+      </div>
 
-    </div>
+  </div>
 </div>
+
 
 <div class="footer container-fluid">
  <div class="container">
@@ -325,6 +326,7 @@
     <script src="index.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
+      
         var typed = new Typed('#element', {
           strings: ['Radiate Wellness, Radiate Joy.', 'Discover the Joy of Living Well.','From Wellness Comes Wholeness.'],
           typeSpeed: 50,
@@ -336,7 +338,12 @@
     <!-- Typed js -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   <script>  function redirectToAppointment() {
+   <script> 
+   function redirectToIndex() {
+    window.location.href = "index.html";
+                              }
+
+    function redirectToAppointment() {
     window.location.href = "appointment.html";
    }
    </script>

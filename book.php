@@ -1,4 +1,5 @@
 <?php
+
 if (isset($_POST['submit'])) {
 
     // Establish connection to the database

@@ -90,7 +90,11 @@ $conn->close();
             echo "<td>".$row['time']."</td>";
             echo "<td>".$row['issue']."</td>";
             echo "<td>".$row['doctorname']."</td>";
-           
+            echo "<td>
+            <button class='tick-btn'>✔</button>
+            <button class='dlt-btn'>X</button>
+
+            </td>";
             echo "</tr>";
          
       
@@ -116,7 +120,15 @@ $conn->close();
             $(this).closest('tr').css('background-color', '#EBDACB'); // Change the color as needed
           });
         });
+        
         </script>
+        <script>
+    $(document).ready(function() {
+        $('table').on('click', '.dlt-btn', function() {
+            $(this).closest('tr').remove();
+        });
+    });
+</script>
 </body>
 
 </html>
