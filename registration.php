@@ -38,14 +38,14 @@ $conn->close();
             <li><i class="fa-solid fa-bars"></i>&nbsp; <span >Dashboard</span> </li>
            </a>
             <a href="registration.php">
-                <li><i class="fa-solid fa-file-pen"></i>&nbsp;<span>Registrations</span> </li>
+                <li><i class="fa-solid fa-file-pen"></i>&nbsp;<span>Appointments</span> </li>
             </a>
             <a href="addPatient.html">
                 <li><i class="fa-solid fa-user-plus"></i>&nbsp;<span>Add Patient</span> </li>
             </a>
             <a href="history.html">
                 <li><i class="fa-solid fa-notes-medical"></i>&nbsp;<span>History</span> </li>
-            </a> <a href="user.html">
+            </a> <a href="user.php">
                 <li><i class="fa-solid fa-notes-medical"></i>&nbsp;<span>Users</span> </li>
             </a>
 
